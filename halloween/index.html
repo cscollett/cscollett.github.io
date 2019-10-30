@@ -18,10 +18,9 @@ imagesArray[6] = new Image();
 imagesArray[6].src = "7.png";
 
 function displayImage() {
-  var num = Math.floor(Math.random());
+  var num = Math.floor(Math.random() * 7);
   document.getElementById("img").src = imagesArray[num].src;
 }
-displayImage();
 </script>
 
 <body onload="displayImage();">
