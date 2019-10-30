@@ -1,0 +1,31 @@
+<html>
+<script>
+  // create an array named imagesArray that contains the seven image file names: dog.jpg, fox.jpg, mouse.jpg, alligator.jpg, fish.jpg, parrot.jpg and cat.jpg
+imagesArray = new Array(7);
+imagesArray[0] = new Image();
+imagesArray[0].src = "1.png";
+imagesArray[1] = new Image();
+imagesArray[1].src = "2.png";
+imagesArray[2] = new Image();
+imagesArray[2].src = "3.png";
+imagesArray[3] = new Image();
+imagesArray[3].src = "4.png";
+imagesArray[4] = new Image();
+imagesArray[4].src = "5.png";
+imagesArray[5] = new Image();
+imagesArray[5].src = "6.png";
+imagesArray[6] = new Image();
+imagesArray[6].src = "7.png";
+
+function displayImage() {
+  var num = Math.floor(Math.random());
+  document.getElementById("img").src = imagesArray[num].src;
+}
+displayImage();
+</script>
+
+<body onload="displayImage();">
+ <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0">
+   <img id="img" src="white.png" style="position:absolute;top:0;left:0;right:0;bottom:0;%"/></a>
+</body>
+</html>
